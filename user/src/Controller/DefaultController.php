@@ -14,7 +14,7 @@ class DefaultController extends AbstractController
     #[Route('/')]
     public function index(): Response
     {
-        return $this->render('default/index.html.twig', [
+	    return $this->render('default/index.html.twig', [
             'controller_name' => 'DefaultController',
         ]);
     }
@@ -24,5 +24,5 @@ class DefaultController extends AbstractController
     {
         return $this->json("Hello API service User");
     }
-    
+
 }
